@@ -326,9 +326,13 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Perf
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
+
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi_sm6250
+    android.hardware.power-service.xiaomi-libperfmgr
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -377,7 +381,9 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Telephony
 PRODUCT_PACKAGES += \

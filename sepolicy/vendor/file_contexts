@@ -49,7 +49,7 @@
 /mnt/vendor/persist/subsys(/.*)?                                        u:object_r:persist_subsys_file:s0
 
 # Power HAL
-/vendor/bin/hw/android\.hardware\.power@1\.3-service\.xiaomi_sm6250                                     u:object_r:hal_power_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr   u:object_r:hal_power_default_exec:s0
 
 # Sys
 /sys/bus/iio/devices                                                                                                     u:object_r:vendor_sysfs_iio:s0
